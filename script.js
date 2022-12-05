@@ -36,6 +36,8 @@ function generatePassword() {
     alert("Length criteria not followed. Please try again");
   }
 
+  alert("You must confirm at least 2 of 4 following prompts")
+
   if (confirm("Include numbers in password?")) {
     pwNumberChar = true
     createdPassword += pwNumberChar;
