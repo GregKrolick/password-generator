@@ -9,6 +9,8 @@ var pwSpecialChar = false;
 var pwUpperCaseChar = false;
 var pwLowerCaseChar = false;
 
+var confirmedCharCount = 0;
+
 var createdPassword = ""
 
 
@@ -38,23 +40,34 @@ function generatePassword() {
 
   alert("You must confirm at least 2 of 4 following prompts")
 
-  if (confirm("Include numbers in password?")) {
+    if (confirm("Include numbers in password?")) {
     pwNumberChar = true
     createdPassword += pwNumberChar;
+    confirmedCharCount ++;
   }
 
   if (confirm("Include lowercase characters in password?")) {
     pwLowerCaseChar = true
     createdPassword += pwLowerCaseChar;
+    confirmedCharCount ++;
   }
 
   if (confirm("Include uppercase characters in password?")) {
     pwUpperCaseChar = true
     createdPassword += pwUpperCaseChar;
+    confirmedCharCount ++;
   }
 
   if (confirm("Include special characters in password?")) {
     pwSpecialChar = true
     createdPassword += pwSpecialChar;
+    confirmedCharCount ++;
+  }
+
+  // confirms if at least 2 character options were selected
+  if (confirmedCharCount < 2){
+    alert ("Two character options must be selected")
+  } else {
+    console.log("test")
   }
 }
