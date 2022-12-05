@@ -1,3 +1,9 @@
+// possible password characters 
+var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerChars = "abcdefghijklmnopqrstuvwxyz";
+var numberChars = "0123456789";
+var specialChars = "~!@#$&*?";
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
