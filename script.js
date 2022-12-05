@@ -28,12 +28,31 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
 
+  //prompts for password length
   var passwordLength = prompt("Enter Password Length. Must be greater than 7 and less than 129");
   
   if (passwordLength == null || passwordLength == "" || passwordLength < 8 || passwordLength > 128 ) {
     passwordLength = parseInt(passwordLength);
-    alert("Length Criteria not followed. Please try again");
+    alert("Length criteria not followed. Please try again");
   }
 
+  if (confirm("Include numbers in password?")) {
+    pwNumberChar = true
+    createdPassword += pwNumberChar;
+  }
 
+  if (confirm("Include lowercase characters in password?")) {
+    pwLowerCaseChar = true
+    createdPassword += pwLowerCaseChar;
+  }
+
+  if (confirm("Include uppercase characters in password?")) {
+    pwUpperCaseChar = true
+    createdPassword += pwUpperCaseChar;
+  }
+
+  if (confirm("Include special characters in password?")) {
+    pwSpecialChar = true
+    createdPassword += pwSpecialChar;
+  }
 }
