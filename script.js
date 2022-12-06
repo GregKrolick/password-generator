@@ -33,7 +33,7 @@ function generatePassword() {
   //prompts for password length
   var passwordLength = prompt("Enter Password Length. Must be greater than 7 and less than 129");
   
-  if (passwordLength == null || passwordLength == "" || passwordLength < 8 || passwordLength > 128 || Number.isFinite(passwordLength) === false ) {
+  if (passwordLength == null || passwordLength == "" || passwordLength < 8 || passwordLength > 128) {
     passwordLength = parseInt(passwordLength);
     alert("Length criteria not followed. Please try again");
     return "Error";
