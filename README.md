@@ -11,10 +11,10 @@ A simple password generator. It prompts the user for how long that want the pass
 
 ## Deployed Site
 
-[Portfolio]https://gregkrolick.github.io/portfolio/
+[Portfolio]https://gregkrolick.github.io/password-generator/
 
 ## Code Snippet
-https://github.com/GregKrolick/portfolio/blob/b109d83588fbdc41156fa16bb77dad611248ba0f/index.html#L24-L29
+https://github.com/GregKrolick/password-generator/blob/296a243ec93b64726c3a2bc837e244442c75984e/script.js#L67-L75
 
 By Gregory Krolick
 
